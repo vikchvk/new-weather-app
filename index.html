@@ -17,19 +17,27 @@
   </head>
   <body>
     <div class="container">
+      <div class="weather-app-wrapper"></div>
       <div class="weather-app"></div>
+      <div class="overview"></div>
       <h1>New York</h1>
       <ul>
         <li>Friday 05:00</li>
         <li>Clear</li>
       </ul>
       <div class="row">
-        <div class="col-md-6">
+        <div class="col-6">
+          <div class="clearfix weather-temperature">
           <img
             src="https://ssl.gstatic.com/onebox/weather/64/cloudy.png"
             alt="Cloudy"
+            class="float-left"
           />
-          12°C |°F
+          <div class="float-left">
+          <strong>12</strong>
+          <span class="units">°C | <a href="#"></a>°F</span>
+        </div>
+        </div>
         </div>
         <div class="col-6">
           <ul>
@@ -45,7 +53,6 @@
         > by Viktoriia Chvykova
       </small>
       </div>
-      
     </div>
     <script src="src/index.js"></script>
   </body>
