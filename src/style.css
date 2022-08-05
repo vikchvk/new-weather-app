@@ -8,7 +8,7 @@ body {
 .weather-app {
   padding: 20px;
   border: 1px solid #dadde1;
-  border: 5px;
+  border-radius: 5px;
 }
 
 h1 {
@@ -17,7 +17,7 @@ h1 {
   font-weight: 100;
   height: 27.7778px;
   line-height: 28px;
-  text-align: left;
+
   margin-bottom: 0;
 }
 ul {
