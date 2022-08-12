@@ -1,3 +1,15 @@
+let currentTime = new Date().getHours();
+if (7 <= currentTime && currentTime < 19) {
+  if (document.body) {
+    document.body.background =
+      "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/043/409/original/cliff-4420635.jpg?1660310104";
+  }
+} else {
+  if (document.body) {
+    document.body.background =
+      "https://s3.amazonaws.com/shecodesio-production/uploads/files/000/043/410/original/sunrise-4695484.jpg?1660310169";
+  }
+}
 function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();

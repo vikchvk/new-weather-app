@@ -12,13 +12,13 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./src/style.css" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
   <body>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <form id="search-form" class="mb-3">
+          <form id="search-form" class="search-form">
             <div class="row">
               <div class="col-9">
                 <input
@@ -33,7 +33,7 @@
                 <input
                   type="submit"
                   value="Search"
-                  class="btn btn-primary w-100"
+                  class="btn btn-light w-80"
                 />
               </div>
             </div>
@@ -48,7 +48,7 @@
 
           <div class="row">
             <div class="col-6">
-              <div class="clearfix weather-temp">
+              <div class="clearfix weather-temperature">
                 <img src="" alt="Clear" id="icon" class="float-left" />
                 <span class="temperature" id="temperature">18</span
                 ><span class="unit"
@@ -63,7 +63,7 @@
             <div class="col-6">
               <ul>
                 <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span> km/h</li>
+                <li>Wind: <span id="wind"></span>m/h</li>
               </ul>
             </div>
           </div>
@@ -75,7 +75,7 @@
                 <img
                   src="http://openweathermap.org/img/wn/03d@2x.png"
                   alt=""
-                  width="40"
+                  width="50"
                 />
                 <div class="weather-forecast-temperature">
                   <span class="weather-forecast-temp-max">18°</span>
@@ -85,7 +85,7 @@
             </div>
           </div>
         </div>
-        <small>
+        <small class="coder">
           <a href="https://github.com/vikchvk/new-weather-app" target="_blank">
             Open-source code</a
           >
